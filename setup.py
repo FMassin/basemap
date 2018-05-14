@@ -14,7 +14,7 @@ if sys.version_info < (2, 6):
 inc_dirs = []
 if any('--' + opt in sys.argv for opt in Distribution.display_option_names +
        ['help-commands', 'help']) or sys.argv[1] == 'egg_info':
-    from setuptools import setup, Extension
+    from setuptoolsort setup, Extension
 else:
     import numpy
     # Use numpy versions if they are available.
